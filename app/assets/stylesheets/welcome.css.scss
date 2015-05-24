@@ -4,34 +4,50 @@
 
 header {
 	text-align: center;
+	width: 100%;
+	background-color: red;
+	padding-top: 1px;
 }
 
 hr {
 	border: outset;
 }
 
+.content {
+	margin: 0 auto;
+	width: 90%;
+}
+
 .user_button {
-  background: #f0e2ea;
-  background-image: -webkit-linear-gradient(top, #f0e2ea, #f5faf7);
-  background-image: -moz-linear-gradient(top, #f0e2ea, #f5faf7);
-  background-image: -ms-linear-gradient(top, #f0e2ea, #f5faf7);
-  background-image: -o-linear-gradient(top, #f0e2ea, #f5faf7);
-  background-image: linear-gradient(to bottom, #f0e2ea, #f5faf7);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Georgia;
-  color: black;
-  font-size: 10px;
-  text-decoration: none;
+	background: #f0e2ea;
+	background-image: -webkit-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -moz-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -ms-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -o-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: linear-gradient(to bottom, #f0e2ea, #f5faf7);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: black;
+	font-size: 10px;
+	text-decoration: none;
 }
 
 .user_button:hover {
-  background: #c0cedb;
-  background-image: -webkit-linear-gradient(top, #c0cedb, #f9f7fa);
-  background-image: -moz-linear-gradient(top, #c0cedb, #f9f7fa);
-  background-image: -ms-linear-gradient(top, #c0cedb, #f9f7fa);
-  background-image: -o-linear-gradient(top, #c0cedb, #f9f7fa);
-  background-image: linear-gradient(to bottom, #c0cedb, #f9f7fa);
-  text-decoration: none;
+	background: #c0cedb;
+	background-image: -webkit-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -moz-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -ms-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -o-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: linear-gradient(to bottom, #c0cedb, #f9f7fa);
+	text-decoration: none;
+}
+
+footer {
+	text-align: center;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:90px;
 }
