@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Market Place</title>
+</head>
+<body>
+	<header>
+		<h1>Welcome To the Market Place</h1>
+		<hr>
+	</header>
+	<p>Find me in app/views/welcome/index.html.erb</p>
+
+<!-- Link to Users Page -->
+	<%= link_to "<button>Users List</button>".html_safe, users_path, :class =>"user_button" %> 
+
+<!-- Link to New User Registration Page -->
+	<%= link_to "<button>Register</button>".html_safe, new_user_path, :class =>"user_button" %>
+
+</body>
+</html>

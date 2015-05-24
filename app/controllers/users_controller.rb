@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
 private
 	def user_params
-	  params.require(:bean).permit(:name, :roast, :origin, :quantity)
+	  params.require(:user).permit(:name, :email)
 	end
 
 

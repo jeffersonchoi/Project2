@@ -5,7 +5,8 @@
         <li>
             <strong> Name: <%= user.name %> </strong> <br>
             Email: <%= user.email %>
-            <%= link_to "More info", user_path(user) %>
+            <button> <%= link_to "More info", user_path(user) %> </button>
         </li>
     <% end %>
+       <button> <%= link_to "Create a New User", new_user_path %> </button>
 </ul>
