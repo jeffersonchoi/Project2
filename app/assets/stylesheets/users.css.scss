@@ -1,3 +1,39 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table, td, th {
+	text-align: center;	
+    border: 1px solid black;
+}
+
+table {
+	margin-left: 10px;
+}
+
+.user_button {
+	background: #f0e2ea;
+	background-image: -webkit-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -moz-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -ms-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: -o-linear-gradient(top, #f0e2ea, #f5faf7);
+	background-image: linear-gradient(to bottom, #f0e2ea, #f5faf7);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: black;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.user_button:hover {
+	background: #c0cedb;
+	background-image: -webkit-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -moz-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -ms-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: -o-linear-gradient(top, #c0cedb, #f9f7fa);
+	background-image: linear-gradient(to bottom, #c0cedb, #f9f7fa);
+	text-decoration: none;
+}
