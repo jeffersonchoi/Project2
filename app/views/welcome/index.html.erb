@@ -10,15 +10,16 @@
 		<hr>
 	</header>
 	
-	<div class="content">
-
-		<p>Find me in app/views/welcome/index.html.erb</p>
-		<%= image_tag("item1.jpeg", :alt => "table") %>
-
+	<main class="contentWrapper">
+		<p> Things you may be interested at: </p>
+		<%= image_tag("item1.jpeg", :alt => "table", :class => "image_size") %>
+		<br>
+		<p> Recent popular searches: </p>
+		<%= image_tag("item1.jpeg", :alt => "table", :class => "image_size") %>
+		<p> testing </p>
+	</main>
 	
-	</div>
-	
-	<footer>
+	<div class="footer">
 		<hr>
 			<%= link_to "<button>HomePage</button>".html_safe, index_page_path, :class =>"user_button" %>
 		<!-- Link to Users Page -->
@@ -26,9 +27,8 @@
 
 		<!-- Link to New User Registration Page -->
 			<%= link_to "<button>Register</button>".html_safe, new_user_path, :class =>"user_button" %>
-	</footer>
+	</div>
 
 
 </body>
-
 </html>
