@@ -1,0 +1,19 @@
+<h1>Register a new User!</h1>
+
+<%= form_for @item do |f| %>
+
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <div>
+        <%= f.label :quantity %>
+        <%= f.text_field :quantity %>
+    </div>
+
+    <button> <%= f.submit "Add new user!" %> </button>
+
+<% end %>
+
+<button> <%= link_to "Back to user list!", items_path %> </button>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<header>
+		<h1>Market Place</h1>
+		<hr>
+	</header>
+
+
+<h1> <%= @item.name %> </h1>
+
+<p>Item name is <%= @item.name %>. Quantity is <%= @item.quantity %>. Item price is <%= @item.price %>, item color is <%= @item.color %>, item size is <%= @item.size %>, item description is <%= @item.description %> </p>
+
+<button> <%= link_to "Edit this user!", edit_item_path(@item) %> </button>
+<button> <%= link_to "Back to User list!", items_path %> </button>
+<button> <%= link_to "Delete this user!", item_path, method: :delete, data: { confirm: "Are you sure you want to delete this profile?"} %> </button>
+
+
+
+</body>
+</html>

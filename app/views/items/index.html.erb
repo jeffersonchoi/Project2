@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+<body>
+	<header>
+		<h1>Market Place</h1>
+		<hr>
+	</header>
+
+	<h2>Items List</h2>
+		<table>
+			<tr> 
+				<th> ID   </th>
+				<th> Name </th>
+				<th> Size </th>
+				<th> Quantity </th>
+				<th> Price </th>
+				<th> Description </th>
+				<th> Detailed Info </th>
+			<tr>
+		    <% @items.each do |item| %>
+				<tr>
+					<td> <%= item.id %> </td>
+					<td> <%= item.name %> </td>   
+					<td> <%= item.size %> </td>
+					<td> <%= item.quantity %> </td>
+					<td> <%= item.price %> </td>
+					<td> <%= item.description %> </td>
+					<td> <%= link_to "More info", item_path(item) %>  <td>
+				</tr>
+		    <% end %>
+		</table>
+
+		       <%= link_to "<button>Create a New Item</button>".html_safe, new_item_path, :class =>"item_button" %>
+		       <%= link_to "<button>HomePage</button>".html_safe, index_page_path, :class =>"item_button" %>
+	
+
+</body>
+</html>
